@@ -12,4 +12,4 @@
 # other
 # rm -rf package/emortal/{autosamba,ipv6-helper}
 
-sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.default
+#sed -i '$a src-git istore https://github.com/linkease/istore;main' feeds.conf.default
