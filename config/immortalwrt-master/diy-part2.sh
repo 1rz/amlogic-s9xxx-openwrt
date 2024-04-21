@@ -38,8 +38,8 @@ git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
 # ------------------------------- Other ends -------------------------------
 sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
-pushd package/luci-app-openclash/luci-app-openclash/tools/po2lmo
-make && sudo make install
-popd
-./scripts/feeds install -d y -p istore luci-app-store
+# pushd package/luci-app-openclash/luci-app-openclash/tools/po2lmo
+# make && sudo make install
+# popd
+# ./scripts/feeds install -d y -p istore luci-app-store
 
