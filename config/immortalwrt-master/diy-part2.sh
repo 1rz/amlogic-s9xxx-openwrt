@@ -24,20 +24,20 @@ echo "DISTRIB_SOURCECODE='immortalwrt'" >>package/base-files/files/etc/openwrt_r
 #
 # Add luci-app-amlogic
 
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
-git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
-git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
-git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
-#git clone https://github.com/animegasan/luci-app-quickstart package/luci-app-quickstart
+#git clone https://github.com/jerrykuku/luci-theme-argon.git package/luci-theme-argon
+#git clone https://github.com/jerrykuku/luci-app-argon-config.git package/luci-app-argon-config
+#git clone https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/luci-app-unblockneteasemusic
+#git clone --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
+##git clone https://github.com/animegasan/luci-app-quickstart package/luci-app-quickstart
 
-rm -rf package/luci-app-amlogic
-git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
+#rm -rf package/luci-app-amlogic
+#git clone https://github.com/ophub/luci-app-amlogic.git package/luci-app-amlogic
 #
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
 # ------------------------------- Other ends -------------------------------
-sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
+#sed -i 's/192.168.1.1/192.168.1.254/g' package/base-files/files/bin/config_generate
 # pushd package/luci-app-openclash/luci-app-openclash/tools/po2lmo
 # make && sudo make install
 # popd
