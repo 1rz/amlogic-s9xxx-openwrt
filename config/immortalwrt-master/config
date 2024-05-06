@@ -23,6 +23,7 @@ CONFIG_TARGET_armsr=y
 # CONFIG_TARGET_mxs is not set
 # CONFIG_TARGET_ixp4xx is not set
 # CONFIG_TARGET_lantiq is not set
+# CONFIG_TARGET_loongarch64 is not set
 # CONFIG_TARGET_malta is not set
 # CONFIG_TARGET_pistachio is not set
 # CONFIG_TARGET_mvebu is not set
@@ -441,8 +442,8 @@ CONFIG_GDB=y
 # CONFIG_HAS_PREBUILT_LLVM_TOOLCHAIN is not set
 CONFIG_USE_MUSL=y
 CONFIG_SSP_SUPPORT=y
-CONFIG_BINUTILS_VERSION_2_40=y
-CONFIG_BINUTILS_VERSION="2.40"
+CONFIG_BINUTILS_VERSION_2_42=y
+CONFIG_BINUTILS_VERSION="2.42"
 CONFIG_GCC_VERSION="13.2.0"
 CONFIG_GCC_USE_DEFAULT_VERSION=y
 CONFIG_LIBC="musl"
@@ -5636,7 +5637,6 @@ CONFIG_PACKAGE_libarchive=y
 # CONFIG_PACKAGE_libasm is not set
 # CONFIG_PACKAGE_libassuan is not set
 # CONFIG_PACKAGE_libatasmart is not set
-# CONFIG_PACKAGE_libaudit is not set
 # CONFIG_PACKAGE_libauparse is not set
 CONFIG_PACKAGE_libavahi-client=y
 CONFIG_PACKAGE_libavahi-dbus-support=y
@@ -7360,7 +7360,7 @@ CONFIG_PACKAGE_knot-resolver_dnstap=y
 # CONFIG_PACKAGE_mdns-utils is not set
 # CONFIG_PACKAGE_mdnsd is not set
 # CONFIG_PACKAGE_mdnsresponder is not set
-# CONFIG_PACKAGE_mosdns is not set
+CONFIG_PACKAGE_mosdns=y
 # CONFIG_PACKAGE_nsd is not set
 # CONFIG_PACKAGE_nsd-control is not set
 # CONFIG_PACKAGE_nsd-control-setup is not set
@@ -9034,7 +9034,8 @@ CONFIG_PACKAGE_libjson-script=y
 CONFIG_PACKAGE_lm-sensors=y
 CONFIG_PACKAGE_lm-sensors-detect=y
 # CONFIG_PACKAGE_logger is not set
-# CONFIG_PACKAGE_logrotate is not set
+CONFIG_PACKAGE_logrotate=y
+# CONFIG_LOGROTATE_ACL is not set
 # CONFIG_PACKAGE_lolcat is not set
 # CONFIG_PACKAGE_look is not set
 CONFIG_PACKAGE_losetup=y
